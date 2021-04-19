@@ -1,1 +1,0 @@
-A flex-based business website for a project part of the Front-end Engineer Career path on Codecademy. All the text and images are taken from their example website : https://content.codecademy.com/PRO/independent-practice-projects/flexbox-business-site/example-site/index.html
