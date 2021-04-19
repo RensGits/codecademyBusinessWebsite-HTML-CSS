@@ -1,4 +1,8 @@
-
+body{
+    width: 100%;
+    margin: 0;
+    background-color: rgb(223, 181, 128);
+}
 
 h1{
     
@@ -20,9 +24,33 @@ h3{
     justify-content: center;
     font-size: 1.3em;
     text-align: center;
-    color: black;
-
+    color: white;
+    font-family: 'Open Sans', sans-serif;
 }
+
+h4{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    margin: 0% 10%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    font-size: 1.2em;
+    background-color: whitesmoke;
+}
+
+p, a{
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    color: black
+}
+
+a:hover{
+    text-decoration: none;
+}
+
 
 nav{
     display: flex;
@@ -45,41 +73,49 @@ header{
 }
 
 .productsHeader{
-   
+   justify-self: center;
     /* background-image: url("https://content.codecademy.com/PRO/independent-practice-projects/flexbox-business-site/img/skyscrapers.jpg"); */
-    color:black;
+    background-color:rgb(27, 27, 27);
     text-align: center; 
-    padding: 0% 10%;
-
+    padding: 1% 10%;
+    color: rgb(223, 181, 128);
+    margin: auto;
 }
 
 .productsContainer{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-content: space-around; 
+    padding-bottom: 8%;
     height: auto;
     width: 80%;
     margin: auto;
-   
+    background-color: whitesmoke;   
 }
 
 .product{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     background-color: antiquewhite;
-    padding: 4%;
+    padding: 7%;
     margin: 3%;
     color: white;
     font-size: 2em; 
     background-size: cover;
 }
 
+.product:hover{
+    opacity: 0.8;
+    cursor: pointer;
+
+}
+
 .productText{
-    padding: 4% 10%; 
+    padding: 10% 10%; 
     background-color: rgba(19, 19, 19, 0.51);
 }
     
@@ -109,5 +145,67 @@ header{
     
 }
 
+.teamMatesContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    margin: auto;
+    height: auto;
+    padding: 4% 10%;
+    background-image: url("https://content.codecademy.com/PRO/independent-practice-projects/flexbox-business-site/img/blurred-road.jpg")
+}
 
+.mateContainer{
+    height: 500px;
+    width: 300px;
+    background-color: rgba(19, 19, 19, 0.51);
+    margin: 2%;
+}
 
+.teamMate{
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+}
+
+.mateName{
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    font-style: normal;
+    background-color: rgba(19, 19, 19, 0.51) ;
+}
+
+.mateDescription{
+    text-align: center;
+    font-size: 1em;
+    color: white;
+}
+
+.lisa{
+    background-image: url(https://content.codecademy.com/PRO/independent-practice-projects/flexbox-business-site/img/employee-one.jpg);   
+}
+
+.alex{
+    background-image: url(https://content.codecademy.com/PRO/independent-practice-projects/flexbox-business-site/img/employee-two.jpg);
+}
+
+.omar{
+    background-image: url(https://content.codecademy.com/PRO/independent-practice-projects/flexbox-business-site/img/employee-three.jpg);
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0% 20%;
+    height: 200px;
+    background-color: rgb(223, 181, 128);
+    color: white;
+}
+
+.footerItem{
+    padding: 4%;
+}
